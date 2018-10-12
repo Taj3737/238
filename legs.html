@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Legs</title>
+        <link rel="manifest" href="js/manifest.json">
+        <link rel="stylesheet" href="style/style2.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script><script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <link rel="manifest" href="js/manifest.json">
+        <meta name="author" content="Taj Chahal">
+        <meta name="description" content="calorie calculator,gym,fitness,health">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="green">
+        <meta name="apple-mobile-web-app-title" content="Dynamic Fitness App">
+        <meta name="msapplication-starturl" content="index.html">
+    </head>
+    <body>
+        <a href="index.html"><img src="assets/home.png" style="width:82px; height:86px" title="home"></a>
+        <div class="container">
+            <input type="text" hidden value="Legs" id="type" />
+            <div class="form-control">
+                <label>Date</label>
+                <input id="inputDate" class="inputs" type="date" class="inputDate" required/>
+            </div>
+            <select id="exercise" class="form-control">
+                <option>Pick Exercise</option>
+                <option>Leg Extensions</option>
+                <option>Seated Leg Curl</option>
+                <option>Seated Calf Raise</option>
+                <option>Squats</option>
+            </select>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Weights</label>
+                <input id="weights" type="text" class="form-control" id="formGroupExampleInput" placeholder="Kg">
+            </div>
+            <div class="form-group">
+                <label for="exampleSelect1">No of Sets</label>
+                <select id="sets" class="form-control" id="exampleSelect1">
+                    <option>1 Set</option>
+                    <option>2 Sets</option>
+                    <option>3 Sets</option>
+                    <option>4 Sets</option>
+                    <option>5 Sets</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary" id="add_data">Add Data</button>
+        </div>
+        <script type="text/javascript" src="js/add_data.js"></script>
+    </body>
+</html>

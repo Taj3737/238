@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>Login/Signup Form</title>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <link rel="manifest" href="js/manifest.json">
+        <meta name="author" content="Taj Chahal">
+        <meta name="description" content="calorie calculator,gym,fitness,health">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="green">
+        <meta name="apple-mobile-web-app-title" content="Dynamic Fitness App">
+        <meta name="msapplication-starturl" content="index.html">
+    </head>
+    <body>
+        <a href="index.html"><img src="assets/home.png" style="width:82px; height:86px" title="home"></a>
+        <div class="form">
+            <div class="head" class="signup">
+                <div onclick="swap(this);" data-tab="login" class="login-tab" >
+                    LOGIN
+                </div>
+                <div onclick="swap(this);" data-tab="signup" class="signup-tab">
+                    SIGNUP
+                </div>
+            </div>
+            <div class="body" id="form-body">
+                <div class="login">
+                    <div class="form-row">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input type="email" placeholder="Email">
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                        <input type="password" placeholder="Password">
+                        <button onclick="window.location.href='gym&calories.html'">login</button>
+                    </div>
+                    <div class="span">
+                        <span>OR</span>
+                    </div>
+                    <div class="footer">
+                        Login With
+                        <div class="social google">
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                        </div>
+                        <div class="social facebook">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="signup">
+                    <div class="form-row">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <input type="text" placeholder="Username">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input type="email" placeholder="Email">
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                        <input type="Password" placeholder="Password">
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                        <input type="Password" placeholder="Re-Type Password">
+                        <button onclick="window.location.href='gym&calories.html'">signup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
